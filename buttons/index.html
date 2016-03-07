@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="//startafirenewstatic.s3.amazonaws.com/images/favicon2.ico" />
+    <link id="page_favicon" href="//startafirenewstatic.s3.amazonaws.com/images/favicon2.ico" rel="icon" type="image/x-icon" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      Buttons &middot; Start A Fire
+    </title>
+
+    <link rel="stylesheet" href="_site/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="_site/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="_site/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead">
+      <div class="container">
+        <a href="_site/" class="masthead-logo">
+          <img src="/img/startafire.png" />
+        </a>
+
+        <nav class="masthead-nav">
+          <a class="active" href="_site/brand">Docs</a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <div class="container">
+      <div class="columns docs-layout">
+  <div class="one-fourth column">
+    
+      <nav class="menu docs-menu">
+  <a class="menu-item " href="_site/brand">
+    Brand
+  </a>
+  <a class="menu-item " href="_site/messaging/">
+    Messaging
+  </a>
+  <a class="hide menu-item " href="_site/type/">
+    Type
+  </a>
+  <a class="menu-item " href="_site/wordslist/">
+    Words list
+  </a>
+  <a class="hide menu-item " href="_site/forms/">
+    Forms
+  </a>
+  <a class="hide menu-item " href="_site/nav/">
+    Navigation
+  </a>
+  <a class="hide menu-item " href="_site/alerts/">
+    Alerts
+  </a>
+  <a class="hide menu-item " href="_site/blankslate/">
+    Blankslate
+  </a>
+  <a class="hide menu-item " href="_site/avatars/">
+    Avatars
+  </a>
+  <a class="hide menu-item " href="_site/states/">
+    States
+  </a>
+  <a class="hide menu-item " href="_site/tooltips/">
+    Tooltips
+  </a>
+  <a class="hide menu-item " href="_site/utilities/">
+    Utilities
+  </a>
+</nav>
+
+<nav class="menu docs-menu">
+  <a class="hide menu-item " href="_site/guidelines/">
+    Code guidelines
+  </a>
+  <a class="menu-item " href="_site/colors/">
+    Colors
+  </a>
+  <a class="menu-item " href="_site/typography/">
+    Typography
+  </a>
+  <a class="hide menu-item selected" href="_site/buttons/">
+    Buttons
+  </a>
+</nav>
+
+    
+  </div>
+  <div class="three-fourths column markdown-body">
+    <h1 class="page-title">
+      Buttons
+    </h1>
+    <div class="markdown-body">
+      <p>Words you should and should not (ever) use.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+  <li><a href="#default-buttons" id="markdown-toc-default-buttons">Default buttons</a></li>
+  <li><a href="#primary" id="markdown-toc-primary">Primary</a></li>
+  <li><a href="#danger" id="markdown-toc-danger">Danger</a></li>
+  <li><a href="#outline" id="markdown-toc-outline">Outline</a></li>
+  <li><a href="#disabled-state" id="markdown-toc-disabled-state">Disabled state</a></li>
+  <li><a href="#block-buttons" id="markdown-toc-block-buttons">Block buttons</a></li>
+  <li><a href="#with-counts" id="markdown-toc-with-counts">With counts</a></li>
+  <li><a href="#button-groups" id="markdown-toc-button-groups">Button groups</a></li>
+  <li><a href="#hidden-text-button" id="markdown-toc-hidden-text-button">Hidden text button</a></li>
+</ul>
+
+<h2 id="default-buttons">Default buttons</h2>
+
+<p>Use the standard—yet classy—<code class="highlighter-rouge">.btn</code> for form actions and primary page actions. These are used extensively around the site.</p>
+
+<p>When using a <code class="highlighter-rouge">&lt;button&gt;</code> element, <strong>always specify a <code class="highlighter-rouge">type</code></strong>. When using a <code class="highlighter-rouge">&lt;a&gt;</code> element, <strong>always add <code class="highlighter-rouge">role="button"</code> for accessibility</strong>.</p>
+
+<p>You can find them in two sizes: the default <code class="highlighter-rouge">.btn</code> and the smaller <code class="highlighter-rouge">.btn-sm</code>.</p>
+
+<h2 id="primary">Primary</h2>
+
+<p>Primary buttons are green and are used to indicate the <em>primary</em> action on a page. When you need your buttons to stand out, use <code class="highlighter-rouge">.btn.btn-primary</code>. You can use it with both button sizes—just add <code class="highlighter-rouge">.btn-primary</code>.</p>
+
+<h2 id="danger">Danger</h2>
+
+<p>Danger buttons are red. They help reiterate that the intended action is important or potentially dangerous (e.g., deleting a repo or transferring ownership). Similar to the primary buttons, just add <code class="highlighter-rouge">.btn-danger</code>.</p>
+
+<h2 id="outline">Outline</h2>
+
+<p>Outline buttons downplay an action as they appear like boxy links. Just add <code class="highlighter-rouge">.btn-outline</code> and go.</p>
+
+<h2 id="disabled-state">Disabled state</h2>
+
+<p>Disable <code class="highlighter-rouge">&lt;button&gt;</code> elements with the boolean <code class="highlighter-rouge">disabled</code> attribute and <code class="highlighter-rouge">&lt;a&gt;</code> elements with the <code class="highlighter-rouge">.disabled</code> class.</p>
+
+<p>Similar styles are applied to primary, danger, and outline buttons:</p>
+
+<h2 id="block-buttons">Block buttons</h2>
+
+<p>Make any button full-width by adding <code class="highlighter-rouge">.btn-block</code>. It adds <code class="highlighter-rouge">width: 100%;</code>, changes the <code class="highlighter-rouge">display</code> from <code class="highlighter-rouge">inline-block</code> to <code class="highlighter-rouge">block</code>, and centers the button text.</p>
+
+<h2 id="with-counts">With counts</h2>
+
+<p>You can easily append a count to a <strong>small button</strong>. Add the <code class="highlighter-rouge">.with-count</code> class to the <code class="highlighter-rouge">.btn-sm</code> and then add the <code class="highlighter-rouge">.social-count</code> after the button.</p>
+
+<p><strong>Be sure to clear the float added by the additional class.</strong></p>
+
+<p>You can also use the <a href="../utilities/#counter">counter</a> component within buttons:</p>
+
+<h2 id="button-groups">Button groups</h2>
+
+<p>Have a hankering for a series of buttons that are attached to one another? Wrap them in a <code class="highlighter-rouge">.btn-group</code> and the buttons will be rounded and spaced automatically.</p>
+
+<p>Add <code class="highlighter-rouge">.button_to</code> to <code class="highlighter-rouge">&lt;form&gt;</code>s within <code class="highlighter-rouge">.btn-group</code>s for proper spacing and rounded corners.</p>
+
+<p><strong>Heads up!</strong> This class name is inconsistent and will change in the next major version.</p>
+
+<h2 id="hidden-text-button">Hidden text button</h2>
+
+<p>Use <code class="highlighter-rouge">.hidden-text-expander</code> to indicate and toggle hidden text.</p>
+
+<p>You can also make the expander appear inline by adding <code class="highlighter-rouge">.inline</code>.</p>
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer hide">
+        Copyright GitHub 2016.<br>
+        Created and maintained by the CSS team at GitHub. <strong>Currently v2.7.0.</strong>
+      </footer>
+    </div>
+
+    <script src="_site/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      anchors.options = {
+        placement: 'left',
+        class: 'anchor-link'
+      };
+      anchors.add(selector);
+    </script>
+  </body>
+</html>
